@@ -1,0 +1,290 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poppins";
+    scroll-behavior: smooth;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+#page>img{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+}
+#page>#nav{
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    position: absolute;
+    z-index: 9;
+    height: 10%;
+    width: 100%;
+    transition: all ease 0.3s;
+}
+#center-nav{
+    display: flex;
+    gap: 30px;
+    padding: 340px;
+}
+#center-nav>a{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+    font-size: 16px;
+    margin-top: 25px;
+}
+#page>#nav>#logo{
+    height: 70px;
+    width: 200px;
+}
+#text{
+    padding: 30px 50px;
+    position: relative;
+    top: 20%;
+    left: 10%;
+    height: 75%;
+    width: 35%;
+    scale: 1.1;
+}
+#text>h1{
+    font-size: 52px;
+    line-height: 1;
+    margin-top: 20px;
+    font-family: "DM Serif Display";
+    font-weight: 600;
+    letter-spacing: 0.38px;
+}
+#text>h4{
+    margin-top: 25px;
+    color: rgb(107, 105, 105);
+    font-size: 17px;
+    font-weight: 550;
+}
+#buttons{
+    position: absolute;
+    left: 10%;
+    bottom: 40%;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+#buttons>#b1{ 
+    padding: 5px 20px;
+    background-color: #896ED0;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    border: none;
+    border-color: #896ED0;
+    border-radius: 15px;
+}
+#buttons>#b2{ 
+    padding: 5px 20px;
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+    border: none;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: white;
+}
+#buttons>button>i{
+    font-size: 18px;
+    margin-left: 2px;
+    color: #866bcb;
+}
+#about{
+    position: relative;
+    height: 100vh;
+    width: 100vw; 
+    background-color: #f0daff;
+}
+#left>img{
+    position: absolute;
+    top: 120px;
+    left: 70px;
+    height: 400px;
+    width: 500px;
+}
+#right{
+    position: absolute;
+    top: 20%;
+    right: 7%;
+}
+#right>#b3{
+    padding: 5px 20px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: white;
+    border: none;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #896ED0;
+}
+#right>h2{
+    color: purple;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 650;
+}
+#right>p{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(66, 65, 65);
+    padding: 4px 0px 0px;
+}
+#skills{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+#content{
+    height: 550px;
+    width: 900px;
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    text-align: center;
+}
+#content>#b4{
+    padding: 5px 20px;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+    color: white;
+    border: none;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #896ED0;
+    position: absolute;
+    right: 20px;
+    bottom: 15px;
+}
+#content>h2{
+    color: purple;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 650;
+    padding: 30px;
+    text-align: left;
+}
+#content>h4{
+    font-size: 23px;
+    color: black;
+    font-weight: 600;
+    position: absolute;
+    left: 30px;
+    bottom: 77%;
+}
+#content>p{
+    position: absolute;
+    top: 25%;
+    left: 3.3%;
+    font-size: 17px;
+    font-weight: 500;
+    color: rgb(66, 65, 65);
+    text-align: justify;
+    letter-spacing: 0.2px;
+}
+#content>img{
+    margin-top: 20%;
+    height: 30%;
+    padding: 30px;
+}
+#portfolio {
+    padding: 50px 200px;
+    background-color: #f0daff;
+    text-align: center;
+}
+#portfolio>h2{
+    color: purple;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 650;
+    padding: 30px;
+    text-align: left;
+}
+.project {
+    margin-top: 2px;
+    padding: 25px;
+    background-color: rgb(246, 246, 246);
+    border-radius: 20px;
+    display: inline-block;
+    text-align: left;
+    max-width: 300px;
+}
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+.project h3 {
+    font-size: 20px;
+    margin: 10px 0px;
+    letter-spacing: 0.5px;
+}
+.project p {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(66, 65, 65);
+}
+.project a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #896ED0;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    margin-top: 10px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+#contact{
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    padding: 50px;
+}
+h2{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+p{
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    color: rgb(66, 65, 65);;
+}
+a img{
+    max-width: 100%;
+    height: auto;
+}
+a i{
+    font-size: 60px;
+}
+#em{
+    padding-top: 20px;
+}
+#an{
+    color: purple;
+    text-decoration: none;
+}
