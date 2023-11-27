@@ -213,6 +213,8 @@ html,body{
 }
 #portfolio {
     padding: 50px 200px;
+    display: flex;
+    gap: 50px;
     background-color: #f0daff;
     text-align: center;
 }
@@ -229,13 +231,14 @@ html,body{
     padding: 25px;
     background-color: rgb(246, 246, 246);
     border-radius: 20px;
-    display: inline-block;
     text-align: left;
-    max-width: 300px;
+    height: 500px;
+    width: 400px;
 }
 .project img {
     max-width: 100%;
-    height: auto;
+    height: 50%;
+    margin-left: 75px;
 }
 .project h3 {
     font-size: 20px;
@@ -248,24 +251,26 @@ html,body{
     color: rgb(66, 65, 65);
 }
 .project a {
+    position: absolute;
+    margin-top: 10px;
     display: inline-block;
     padding: 5px 10px;
     background-color: #896ED0;
     color: white;
     text-decoration: none;
     border-radius: 12px;
-    margin-top: 10px;
     font-weight: 400;
     letter-spacing: 0.5px;
 }
 #contact{
-    height: 100vh;
+    height: 400px;
     width: 100vw;
+    margin-bottom: 10px; 
     text-align: center;
     padding: 50px;
 }
 h2{
-    font-size: 24px;
+    font-size: 27px;
     margin-bottom: 10px;
 }
 p{
@@ -280,9 +285,6 @@ a img{
 }
 a i{
     font-size: 60px;
-}
-#em{
-    padding-top: 20px;
 }
 #an{
     color: purple;
